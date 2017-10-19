@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy"
+	xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+	xmlns:wsse11="http://docs.oasis-open.org/wss/oasis-wss-wssecurity-secext-1.1.xsd"
+	xmlns:env11="http://schemas.xmlsoap.org/soap/envelope" xmlns:env12="http://www.w3.org/2003/05/soap-envelope"
+	xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+	<sp:SignedParts>
+		<sp:Body />
+	</sp:SignedParts>
+	<sp:SignedElements>
+		<sp:XPath>
+			/env11:Header/wsse:Security/wsu:Timestamp
+		</sp:XPath>
+		<sp:XPath>
+			/env11:Header/wsse:Security/wsse:BinarySecurityToken
+		</sp:XPath>
+		<sp:XPath>
+			/env11:Header/wsse:Security/saml:Assertion
+		</sp:XPath>
+	</sp:SignedElements>
+	<sp:SignedElements>
+		<sp:XPath>
+			/env12:Header/wsse:Security/wsu:Timestamp
+		</sp:XPath>
+		<sp:XPath>
+			/env12:Header/wsse:Security/wsse:BinarySecurityToken
+		</sp:XPath>
+		<sp:XPath>
+			/env12:Header/wsse:Security/saml:Assertion
+		</sp:XPath>
+	</sp:SignedElements>
+	<sp:RequiredElements>
+		<sp:XPath>wsse:Security/wsu:Timestamp</sp:XPath>
+	</sp:RequiredElements>
+</wsp:Policy>
