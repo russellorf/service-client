@@ -43,21 +43,21 @@
 			<wsp:ExactlyOne>
 <!-- 			    <wsp:All /> -->
 				<wsp:All>
-					<sp:SignedSupportingTokens>
-						<wsp:Policy>
-							<sp:SamlToken
-								sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
-								<wsp:Policy>
-									<wsp:ExactlyOne>
-										<wsp:All>
-											<sp:WssSamlV11Token10 />
-										</wsp:All>
-										<wsp:All>
-											<sp:WssSamlV11Token11 />
-										</wsp:All>
-									</wsp:ExactlyOne>
-								</wsp:Policy>
-							</sp:SamlToken>
+<!-- 					<sp:SignedSupportingTokens> -->
+<!-- 						<wsp:Policy> -->
+<!-- 							<sp:SamlToken -->
+<!-- 								sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient"> -->
+<!-- 								<wsp:Policy> -->
+<!-- 									<wsp:ExactlyOne> -->
+<!-- 										<wsp:All> -->
+<!-- 											<sp:WssSamlV11Token10 /> -->
+<!-- 										</wsp:All> -->
+<!-- 										<wsp:All> -->
+<!-- 											<sp:WssSamlV11Token11 /> -->
+<!-- 										</wsp:All> -->
+<!-- 									</wsp:ExactlyOne> -->
+<!-- 								</wsp:Policy> -->
+<!-- 							</sp:SamlToken> -->
 <!-- 							<sp:X509Token -->
 <!-- 								sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient"> -->
 <!-- 								<wsp:Policy> -->
@@ -71,8 +71,8 @@
 <!-- 									</wsp:ExactlyOne> -->
 <!-- 								</wsp:Policy> -->
 <!-- 							</sp:X509Token> -->
-						</wsp:Policy>
-					</sp:SignedSupportingTokens>
+<!-- 						</wsp:Policy> -->
+<!-- 					</sp:SignedSupportingTokens> -->
 				</wsp:All>
 			</wsp:ExactlyOne>
 		</wsp:All>

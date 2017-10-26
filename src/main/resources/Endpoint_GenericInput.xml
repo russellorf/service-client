@@ -11,24 +11,24 @@
 	</sp:SignedParts>
 	<sp:SignedElements>
 		<sp:XPath>
-			/env11:Header/wsse:Security/wsu:Timestamp
+			/env11:Envelope/env11:Header/wsse:Security/wsu:Timestamp
 		</sp:XPath>
 		<sp:XPath>
-			/env11:Header/wsse:Security/wsse:BinarySecurityToken
+			/env11:Envelope/env11:Header/wsse:Security/wsse:BinarySecurityToken
 		</sp:XPath>
 		<sp:XPath>
-			/env11:Header/wsse:Security/saml:Assertion
+			/env11:Envelope/env11:Header/wsse:Security/saml:Assertion
 		</sp:XPath>
 	</sp:SignedElements>
 	<sp:SignedElements>
 		<sp:XPath>
-			/env12:Header/wsse:Security/wsu:Timestamp
+			/env12:Envelope/env12:Header/wsse:Security/wsu:Timestamp
 		</sp:XPath>
 		<sp:XPath>
-			/env12:Header/wsse:Security/wsse:BinarySecurityToken
+			/env12:Envelope/env12:Header/wsse:Security/wsse:BinarySecurityToken
 		</sp:XPath>
 		<sp:XPath>
-			/env12:Header/wsse:Security/saml:Assertion
+			/env12:Envelope/env12:Header/wsse:Security/saml:Assertion
 		</sp:XPath>
 	</sp:SignedElements>
 	<sp:RequiredElements>
