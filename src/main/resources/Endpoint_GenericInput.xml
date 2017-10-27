@@ -21,8 +21,8 @@
 				<sp:XPath>
 					/env11:Envelope/env11:Header/wsse:Security/saml:Assertion
 				</sp:XPath>
-			</sp:SignedElements>
-			<sp:SignedElements>
+<!-- 			</sp:SignedElements> -->
+<!-- 			<sp:SignedElements> -->
 				<sp:XPath>
 					/env12:Envelope/env12:Header/wsse:Security/wsu:Timestamp
 				</sp:XPath>

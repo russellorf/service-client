@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<wsse:Security
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+			xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+			soap:mustUnderstand="1">
+			<wsu:Timestamp wsu:Id="TS-7fd26f71-daa2-44c8-9c60-25c3f43a9f37">
+				<wsu:Created>2017-10-27T18:43:53.362Z</wsu:Created>
+				<wsu:Expires>2017-10-27T18:48:53.362Z</wsu:Expires>
+			</wsu:Timestamp>
+			<saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion"
+				AssertionID="AID_ASLDFKAEFIJAS" IssueInstant="2017-10-19T21:00:00Z"
+				Issuer="librarian" MajorVersion="1" MinorVersion="1">
+				<saml:Conditions NotBefore="2017-10-19T20:00:00Z"
+					NotOnOrAfter="2017-10-19T22:00:00Z" />
+				<saml:AuthenticationStatement
+					AuthenticationInstant="2017-10-19T21:00:00Z" AuthenticationMethod="urn:ietf:rfc:3075">
+					<saml:Subject>
+						<saml:NameIdentifier
+							Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">CN=masteruser, OU=Library</saml:NameIdentifier>
+						<saml:SubjectConfirmation>
+							<saml:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key
+							</saml:ConfirmationMethod>
+							<dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+								<dsig:X509Data>
+									<dsig:X509Certificate>adflkafdlk....asdlfkjalsfd
+									</dsig:X509Certificate>
+									<dsig:X509IssuerSerial>
+										<dsig:X509IssuerName>CN=masteruser, OU=Library
+										</dsig:X509IssuerName>
+										<dsig:X509SerialNumber>9345872435</dsig:X509SerialNumber>
+									</dsig:X509IssuerSerial>
+									<dsig:X509SubjectName>CN=masteruser, OU=Library
+									</dsig:X509SubjectName>
+									<dsig:X509SKI>245782495alkdfad</dsig:X509SKI>
+								</dsig:X509Data>
+							</dsig:KeyInfo>
+						</saml:SubjectConfirmation>
+					</saml:Subject>
+				</saml:AuthenticationStatement>
+				<saml:AttributeStatement>
+					<saml:Subject>
+						<saml:NameIdentifier
+							Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">CN=masteruser, OU=Library</saml:NameIdentifier>
+						<saml:SubjectConfirmation>
+							<saml:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key
+							</saml:ConfirmationMethod>
+							<dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+								<dsig:X509Data>
+									<dsig:X509Certificate>adflkafdlk....asdlfkjalsfd
+									</dsig:X509Certificate>
+									<dsig:X509IssuerSerial>
+										<dsig:X509IssuerName>CN=masteruser, OU=Library
+										</dsig:X509IssuerName>
+										<dsig:X509SerialNumber>9345872435</dsig:X509SerialNumber>
+									</dsig:X509IssuerSerial>
+									<dsig:X509SubjectName>CN=masteruser, OU=Library
+									</dsig:X509SubjectName>
+									<dsig:X509SKI>245782495alkdfad</dsig:X509SKI>
+								</dsig:X509Data>
+							</dsig:KeyInfo>
+						</saml:SubjectConfirmation>
+					</saml:Subject>
+					<saml:Attribute AttributeName="dn"
+						AttributeNamespace="http://www.example.org/saml/2000/01/attributes">
+						<saml:AttributeValue>uid=masteruser, ou=Library
+						</saml:AttributeValue>
+					</saml:Attribute>
+				</saml:AttributeStatement>
+				<dsig:Signature xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+					<dsig:SignedInfo>
+						<dsig:CanonicalizationMethod
+							Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+						<dsig:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+						<dsig:Reference URI="#AID_ASLDFKAEFIJAS">
+							<dsig:Transforms>
+								<dsig:Transform
+									Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+								<dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+							</dsig:Transforms>
+							<dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+							<dsig:DigestValue>P235423ADF92485FD=</dsig:DigestValue>
+						</dsig:Reference>
+					</dsig:SignedInfo>
+					<dsig:SignatureValue>ADSLFJ923482LIJF4984FJ</dsig:SignatureValue>
+					<dsig:KeyInfo>
+						<dsig:X509Data>
+							<dsig:X509Certificate>MISDCKLMWEIJ2938J892</dsig:X509Certificate>
+							<dsig:X509IssuerSerial>
+								<dsig:X509IssuerName>UID=librarian, OU=Faculty, O=School
+								</dsig:X509IssuerName>
+								<dsig:X509SerialNumber>34604983059</dsig:X509SerialNumber>
+							</dsig:X509IssuerSerial>
+							<dsig:X509SubjectName>UID=librarian, OU=Faculty, O=School
+							</dsig:X509SubjectName>
+							<dsig:X509SKI>f/209aldfj209rjf29</dsig:X509SKI>
+						</dsig:X509Data>
+					</dsig:KeyInfo>
+				</dsig:Signature>
+			</saml:Assertion>
+			<wsse:SecurityTokenReference
+				xmlns:wsse11="http://docs.oasis-open.org/wss/oasis-wss-wssecurity-secext-1.1.xsd"
+				wsse11:TokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"
+				wsu:Id="STR-c9684d20-a33f-4d46-8fc2-5b87b4e5d0d3">
+				<wsse:KeyIdentifier
+					ValueType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0#SAMLAssertionID">AID_ASLDFKAEFIJAS</wsse:KeyIdentifier>
+			</wsse:SecurityTokenReference>
+			<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+				Id="SIG-e2e884ea-6296-49c4-91ba-153c61f35691">
+				<ds:SignedInfo>
+					<ds:CanonicalizationMethod
+						Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+						<ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"
+							PrefixList="soap" />
+					</ds:CanonicalizationMethod>
+					<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+					<ds:Reference URI="#TS-7fd26f71-daa2-44c8-9c60-25c3f43a9f37">
+						<ds:Transforms>
+							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+								<ec:InclusiveNamespaces
+									xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="wsse soap" />
+							</ds:Transform>
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<ds:DigestValue>hTpW4CnX5SC8DwOS+CX/DvSQ53E=</ds:DigestValue>
+					</ds:Reference>
+					<ds:Reference URI="#_0651673d-79d2-43e4-a286-2494d04dc090">
+						<ds:Transforms>
+							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<ds:DigestValue>l2u0VoPmrWFAx70dA+Zfvf2W8no=</ds:DigestValue>
+					</ds:Reference>
+					<ds:Reference URI="#TS-7fd26f71-daa2-44c8-9c60-25c3f43a9f37">
+						<ds:Transforms>
+							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+								<ec:InclusiveNamespaces
+									xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="wsse soap" />
+							</ds:Transform>
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<ds:DigestValue>hTpW4CnX5SC8DwOS+CX/DvSQ53E=</ds:DigestValue>
+					</ds:Reference>
+					<ds:Reference URI="#STR-c9684d20-a33f-4d46-8fc2-5b87b4e5d0d3">
+						<ds:Transforms>
+							<ds:Transform
+								Algorithm="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#STR-Transform">
+								<wsse:TransformationParameters>
+									<ds:CanonicalizationMethod
+										Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+								</wsse:TransformationParameters>
+							</ds:Transform>
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+						<ds:DigestValue>VoXXlRN7vriWroqvwiM1eDuSl/Y=</ds:DigestValue>
+					</ds:Reference>
+				</ds:SignedInfo>
+				<ds:SignatureValue>EwhGjZ6ZB6GcU1hsRpiB12qbURftVR3FzJvk95Vve58MnWa717aL3bAi28AzUlrGlatjks/h2gGbvg7+YnaDK9NZSJJmJJAf39KAyC9chLsmQLh7W7h79fiSlQiyDHxCPQp8wqqoqgZEDvdAFf10Y/543P4pkjSz/6UabvfDFwkXL9WUhUBdJbEslehVNn/Ul8Eq26X3+uIkpAgZ0la5/+lPpxgYlw4rMPvNDQVC02RQ7YmiTVfpB3sYBGI53zUK7FQcJKBk3G3v2GSrYcBJFnO7bz5uTKIewIK+87vdpTfKcc5Exv7AOZxHkIZ+pGsfKAGCA4r/kq+RJWq12I3ZTQ==
+				</ds:SignatureValue>
+				<ds:KeyInfo Id="KI-8fb60266-9346-4d1e-bc82-4fc8f198f311">
+					<wsse:SecurityTokenReference
+						xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+						xmlns:wsse11="http://docs.oasis-open.org/wss/oasis-wss-wssecurity-secext-1.1.xsd"
+						xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+						wsse11:TokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"
+						wsu:Id="STR-365603ff-f181-4939-a109-5dbfb4b8868d">
+						<wsse:KeyIdentifier
+							ValueType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.0#SAMLAssertionID">AID_ASLDFKAEFIJAS</wsse:KeyIdentifier>
+					</wsse:SecurityTokenReference>
+				</ds:KeyInfo>
+			</ds:Signature>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		wsu:Id="_0651673d-79d2-43e4-a286-2494d04dc090">
+		<ns2:NewOperation xmlns:ns2="http://www.example.org/BookService/">
+			<in>_newOperation_in-640412423</in>
+		</ns2:NewOperation>
+	</soap:Body>
+</soap:Envelope>
